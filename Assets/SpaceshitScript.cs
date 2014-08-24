@@ -20,8 +20,9 @@ public class SpaceshitScript : MonoBehaviour {
 	void Update () {
 		float movementX = Input.GetAxis ("Horizontal") ;
 		float movementY = Input.GetAxis ("Vertical");
-		float hbound = Camera.current.orthographicSize * Camera.current.aspect;
-		float vbound = Camera.current.orthographicSize * Camera.current.aspect;
+
+		float hbound = Camera.main.orthographicSize * Camera.main.aspect;
+		float vbound = Camera.main.orthographicSize * Camera.main.aspect;
 
 
 
